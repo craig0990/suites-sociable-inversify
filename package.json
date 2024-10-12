@@ -4,17 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require reflect-metadata --require ts-node/register test/*.spec.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inversify": "^6.0.2",
-    "reflect-metadata": "^0.2.2"
+    "inversify": "^6.0.2"
   },
   "devDependencies": {
+    "@suites/di.inversify": "^3.0.0",
+    "@suites/doubles.sinon": "^3.0.0",
+    "@suites/unit": "^3.0.0",
+    "@types/mocha": "^10.0.9",
+    "mocha": "^10.7.3",
     "prettier": "^3.3.3",
+    "reflect-metadata": "^0.1.14",
+    "sinon": "^19.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
